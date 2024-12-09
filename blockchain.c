@@ -33,7 +33,7 @@ void main(int argc, char const *argv[])
     genesis_element.info = genesis_block;
     head = add(head, genesis_element);
 
-    // Now, we are going to submmit n random votes
+    // Generating n random votes
     int i, previous_hash = genesis_element.info.previous_block_hash;
     transaction trans_list = (transaction) malloc(NVOTES * sizeof(char)*10);
     for(i=0;i<NVOTES;i++)
